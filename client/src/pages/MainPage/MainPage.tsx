@@ -1,3 +1,5 @@
 export default function MainPage() {
-    return <></>
+    return <>
+        <h1>Sibash stats</h1>
+    </>
 }

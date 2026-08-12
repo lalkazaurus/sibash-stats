@@ -10,9 +10,19 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.101.4",
+    "axios": "^1.19.0",
+    "class-validator": "^0.15.1",
+    "date-fns": "^4.4.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
-    "react-router-dom": "^7.18.2"
+    "react-hook-form": "^7.85.0",
+    "react-hot-toast": "^2.6.0",
+    "react-router-dom": "^7.18.2",
+    "sass": "^1.102.0",
+    "typeorm": "^1.1.0",
+    "zod": "^4.4.3",
+    "zustand": "^5.0.14"
   },
   "devDependencies": {
     "@babel/core": "^7.29.7",
