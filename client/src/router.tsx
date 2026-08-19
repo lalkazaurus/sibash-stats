@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import PlayerPage from "./pages/PlayerPage/PlayerPage";
 import TeamPage from "./pages/TeamPage/TeamPage";
-import NotExists from "./pages/NorExists/NotExists";
+import NotExists from "./pages/NotExists/NotExists";
 import MainLayout from "./layouts/MainLayout/MainLayout";
 import MainPage from "./pages/MainPage/MainPage";
 
