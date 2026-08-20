@@ -1,4 +1,4 @@
-export type Link = {
-    title: string;
-    link: string;
+export type DataLink = {
+	title: string
+	link: string
 }
