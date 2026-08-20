@@ -3,7 +3,7 @@
     position: fixed;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: calc(100vw - 3rem);
     background-color: var(--bg-primary);
     color: var(--text-primary);
     padding: 1.5rem;
