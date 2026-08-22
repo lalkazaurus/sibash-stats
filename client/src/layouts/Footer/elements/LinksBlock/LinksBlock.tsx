@@ -10,7 +10,7 @@ interface LinksBlockProps {
 export default function LinksBlock({ title, links }: LinksBlockProps) {
 	return (
 		<div className={styles.block}>
-			<span>
+			<span className={styles.blockTitle}>
 				<p>{title}</p>
 			</span>
 			<div className={styles.linksBlock}>

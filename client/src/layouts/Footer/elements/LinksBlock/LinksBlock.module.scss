@@ -4,6 +4,7 @@
 	background-color: transparent;
 	color: var(--text-primary);
 	font-family: var(--font-display);
+	gap: 5px;
 }
 
 .linksBlock {
@@ -11,11 +12,17 @@
 	flex-direction: column;
 }
 
-.link {
+.footerLink {
 	text-decoration: none;
+	color: var(--text-primary);
 	transition: all 0.3s ease;
 }
 
-.link:hover {
+.footerLink:hover {
 	color: var(--text-secondary);
+}
+
+.blockTitle {
+	font-size: 24px;
+	cursor: default;
 }
