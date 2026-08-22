@@ -1,0 +1,89 @@
+.footer {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+	font-family: var(--font-display);
+    padding: 20px;
+}
+
+.linksContainer {
+    background-color: var(--bg-primary);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.contactsBlock {
+    display: flex;
+    flex-direction: column;
+    cursor: default;
+    gap: 10px;
+    p {
+        color: var(--font-display);
+    }
+}
+
+.blockTitle {
+	font-size: 24px;
+}
+
+.contactButton {
+    background-color: transparent;
+    color: var(--font-display);
+    border: 1px solid var(--text-primary);
+    padding: 10px;
+    width: 50%;
+    transition: 0.3s ease all;
+}
+
+.contactButton:hover {
+    color: var(--text-secondary);
+    cursor: pointer;
+}
+
+.lowerfooter {
+    width: calc(100% - 20px);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    padding-top: 20px;
+    border-top: 1px solid var(--text-primary);
+    margin-top: 30px;
+    align-items: center;
+    font-size: 18px;
+
+    span {
+        cursor: default;
+    }
+
+    button {
+        background-color: var(--bg-primary);
+        color: var(--text-primary);
+        transition: 0.3s ease all;
+        border: 1px solid var(--text-primary);
+        padding: 10px;
+        font-family: var(--font-display);
+        font-size: 16px;
+    }
+
+    button:hover {
+        color: var(--text-secondary);
+        background-color: var(--bg-surface);
+        cursor: pointer;
+    }
+}
+
+.icons {
+    display: flex;
+    gap: 5px;
+
+    svg {
+        transition: 0.3s ease all;
+    }
+
+    svg:hover {
+        color: var(--text-secondary);
+        cursor: pointer;
+    }
+}
+

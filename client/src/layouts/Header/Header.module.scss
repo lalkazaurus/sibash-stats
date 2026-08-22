@@ -1,0 +1,77 @@
+.header {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: calc(100vw - 3rem);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    padding: 1.5rem;
+    font-family: var(--font-display);
+    display: flex;
+    justify-content: space-between;
+    z-index: 0;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-size: 36px;
+}
+
+.menuButton {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-display);
+    border: none;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    padding: 5px;
+
+    &[data-state="open"] {
+        background-color: var(--bg-dropdown-hover);
+        color: var(--text-primary);
+        outline: 1px solid var(--text-primary);
+    }
+}
+
+.menuRoot {
+    display: flex;
+    gap: 10px;
+    margin-right: 2%;
+    flex-wrap: wrap;
+}
+
+.dropdownContent {
+    z-index: 2;
+    background-color: var(--bg-primary);
+    border-radius: 1rem;
+    padding: 10px;
+    border: 1px solid var(--text-primary);
+}
+
+.dropdownItem {
+    color: var(--text-primary);
+    font-family: var(--font-display);
+    transition: all 0.1s ease;
+    padding: 10px;
+    border-radius: 0.5rem;
+}
+
+.dropdownItem:hover {
+    background-color: var(--bg-dropdown-hover);
+}
+
+.contactLink {
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: all 0.1s ease;
+    padding: 10px;
+    border: 1px solid var(--text-primary);
+    font-size: 20px;
+}
+
+.contactLink:hover {
+    background-color: var(--bg-dropdown-hover);
+}
