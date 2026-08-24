@@ -37,7 +37,7 @@
 }
 
 .contactButton:hover {
-    color: var(--text-secondary);
+    background-color: var(--bg-dropdown-hover);
     cursor: pointer;
 }
 
@@ -67,8 +67,7 @@
     }
 
     button:hover {
-        color: var(--text-secondary);
-        background-color: var(--bg-surface);
+        background-color: var(--bg-dropdown-hover);
         cursor: pointer;
     }
 }
