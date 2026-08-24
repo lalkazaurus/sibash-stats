@@ -1,0 +1,35 @@
+.titleBlock {
+    width: 100vw;
+    min-height: 60vh;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--font-display);
+    gap: 20px;
+
+    h1 {
+        font-size: 72px;
+    }
+
+    p {
+        font-size: 32px;
+    }
+
+    button {
+        background-color: var(--bg-primary);
+        color: var(--text-primary);
+        border: 3px solid var(--text-primary);
+        font-size: 32px;
+        padding: 10px;
+        border-radius: 10px 0px 0px 10px;
+        transition: 0.3s ease all;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: var(--bg-dropdown-hover);
+    }
+}
