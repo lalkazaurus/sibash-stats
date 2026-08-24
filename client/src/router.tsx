@@ -9,7 +9,6 @@ const router = createBrowserRouter([
     {
         path: "/",
         element: <MainLayout/>,
-        errorElement: <NotExists/>,
         children: [
             {
                 index: true,
@@ -22,6 +21,9 @@ const router = createBrowserRouter([
             {
                 path: "team/:id",
                 element: <TeamPage/>
+            }, {
+                path: "*",
+                element: <NotExists/>
             }
         ]
     },

@@ -1,0 +1,38 @@
+.errorBlock {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-display);
+    border: 3px solid var(--bg-primary);
+    padding: 25px;
+    border-radius: 10px 0 0 10px;
+    gap: 5px;
+    background: linear-gradient(135deg, transparent 0%, rgba(0, 0, 0, 0.03) 100%);
+
+    h3 {
+        border-bottom: 1px solid var(--bg-primary);
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    button {
+        background: transparent;
+        color: var(--bg-primary);
+        border: 3px solid var(--bg-primary);
+        border-radius: 10px 0 0 10px;
+        font-family: var(--font-display);
+        padding: 5px;
+        font-size: 18px;
+        transition: all 0.5s ease;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: linear-gradient(135deg, var(--bg-primary) 0%, color-mix(in srgb, var(--bg-primary) 80%, black) 100%);
+        color: var(--text-primary);
+    }
+}
