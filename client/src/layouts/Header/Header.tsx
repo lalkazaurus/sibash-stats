@@ -6,7 +6,7 @@ export default function Header() {
     const navigate = useNavigate();
 
     return <header className={styles.header}>
-        <span className={styles.logo}>
+        <span className={styles.logo} onClick={() => navigate("/")}>
             <p>SibashstatS</p>
         </span>
         <div className={styles.menuRoot}>
