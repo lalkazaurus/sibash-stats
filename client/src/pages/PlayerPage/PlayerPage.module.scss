@@ -1,3 +1,46 @@
-.container {
-    
+.playerBlock {
+    display: flex;
+    position: relative;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    border: 3px solid var(--text-primary);
+    outline: 3px solid var(--bg-primary);
+    font-family: var(--font-display);
+    padding: 15px;
+    flex-direction: column;
+    min-width: 60%;
+
+    h2 {
+        text-align: center;
+    }
+
+    .photo {
+        width: 15vw;
+        height: 16vw;
+        object-fit: contain;
+        object-position: top;
+        border: 2px solid transparent;
+        padding: 5px;
+        transition: 0.3s ease border-color;
+    }
+
+    .logo {
+        width: 3vw;
+        height: 3vw;
+        object-fit: contain;
+        object-position: top;
+        border: 2px solid transparent;
+        padding: 5px;
+        transition: 0.3s ease border-color;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    .country {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 30px;
+    }
 }
