@@ -1,0 +1,73 @@
+.teamBlock {
+    background-color: var(--bg-primary);
+    min-width: 60vw;
+    color: var(--text-primary);
+    margin: 20px;
+    border: 3px solid var(--text-primary);
+    outline: 3px solid var(--bg-primary);
+    font-family: var(--font-display);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    h2 {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    ol {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+        counter-reset: team-counter;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    li {
+        counter-increment: team-counter;
+    }
+
+    img {
+        object-fit: contain;
+        width: 3vw;
+        height: 3vw;
+        flex-shrink: 0;
+    }
+}
+
+.teamCard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--text-primary);
+    transition: 0.3s ease all;
+
+    &::before {
+        content: counter(team-counter);
+        font-size: 24px;
+        font-weight: bold;
+        min-width: 30px;
+        text-align: center;
+        flex-shrink: 0;
+    }
+
+    p {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0;
+
+        &:first-of-type {
+            flex: 1;
+        }
+    }
+}
+
+.teamCard:hover {
+    cursor: pointer;
+    background-color: var(--bg-dropdown-hover);
+}
