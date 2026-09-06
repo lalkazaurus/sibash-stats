@@ -4,6 +4,7 @@ import TeamPage from "./pages/TeamPage/TeamPage";
 import NotExists from "./pages/NotExists/NotExists";
 import MainLayout from "./layouts/MainLayout/MainLayout";
 import MainPage from "./pages/MainPage/MainPage";
+import RankingPage from "./pages/RankingPage/RankingPage";
 
 const router = createBrowserRouter([
     {
@@ -24,6 +25,9 @@ const router = createBrowserRouter([
             }, {
                 path: "*",
                 element: <NotExists/>
+            }, {
+                path: "/ranking",
+                element: <RankingPage/>
             }
         ]
     },
