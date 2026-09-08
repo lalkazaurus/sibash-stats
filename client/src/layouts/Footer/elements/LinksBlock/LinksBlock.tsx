@@ -15,7 +15,7 @@ export default function LinksBlock({ title, links }: LinksBlockProps) {
 			</span>
 			<div className={styles.linksBlock}>
 				{links.map(link => (
-					<Link to={link.link} className={styles.footerLink}>
+					<Link key={link.title} to={link.link} className={styles.footerLink}>
 						{link.title}
 					</Link>
 				))}
